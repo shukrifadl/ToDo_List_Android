@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_padding">24dp</dimen>
+    <dimen name="match_constrain">0dp</dimen>
+    <dimen name="mis_radius">8dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="mid_margin">16dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+</resources>

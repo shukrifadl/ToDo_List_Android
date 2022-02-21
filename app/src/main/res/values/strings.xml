@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="add_task">Add Task</string>
+    <string name="task_marked_complete">Task marked complete</string>
+    <string name="task_marked_active">Task marked active</string>
+    <string name="task_body_hint">"Enter Task Body "</string>
+    <string name="task_title">Enter Task Title</string>
+</resources>
