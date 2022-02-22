@@ -5,18 +5,19 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 
-
 @Entity(tableName = "Tasks")
 public class Task {
-    public Task(int id,String title, String body, boolean completed) {
-        this.id=id;
+    public Task(int id, String title, String body, boolean completed) {
+        this.id = id;
         this.title = title;
         this.body = body;
         this.setCompleted(completed);
-        getStatus = isCompleted() ? "Completed Task" : "Task Not Completed Yet";
+      //  getStatus = isCompleted() ? "Completed Task" : "Task Not Completed Yet";
     }
 
-    public String getStatus;
+    public String getStatus() {
+        return isCompleted ? "Completed Task" : "Task Not Completed Yet";
+    }
 
 
     @PrimaryKey(autoGenerate = true)
@@ -34,7 +35,6 @@ public class Task {
 
     public void setCompleted(boolean completed) {
         isCompleted = completed;
-        getStatus =
-                isCompleted() ? "Completed Task" : "Task Not Completed Yet";
+
     }
 }

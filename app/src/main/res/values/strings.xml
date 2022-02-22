@@ -5,4 +5,5 @@
     <string name="task_marked_active">Task marked active</string>
     <string name="task_body_hint">"Enter Task Body "</string>
     <string name="task_title">Enter Task Title</string>
+    <string name="splash_text">Developed By Shukri</string>
 </resources>

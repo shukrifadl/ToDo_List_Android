@@ -6,4 +6,6 @@
     <dimen name="small_margin">8dp</dimen>
     <dimen name="mid_margin">16dp</dimen>
     <dimen name="text_size">24sp</dimen>
+    <dimen name="body_text_size">14sp</dimen>
+    <dimen name="mid_padding">16dp</dimen>
 </resources>

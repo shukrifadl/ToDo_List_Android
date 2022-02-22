@@ -5,13 +5,18 @@
       <map>
         <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/drawable-v24/ic_baseline_add_task_24.xml" value="0.23850868232890704" />
         <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/drawable/done.xml" value="0.22592592592592592" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24322916666666666" />
         <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout-v23/add_update_fragment.xml" value="0.265015479876161" />
-        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/activity_main.xml" value="0.13632246376811594" />
-        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/add_fragment.xml" value="0.6" />
-        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/add_update_fragment.xml" value="0.30206378986866794" />
-        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/home_fragment.xml" value="0.10797174571140263" />
-        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/task_details_fragment.xml" value="0.1" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/add_fragment.xml" value="0.2" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/add_update_fragment.xml" value="0.2956810631229236" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/home_fragment.xml" value="0.2" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/splash_screen.xml" value="0.2" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/task_details_fragment.xml" value="0.2" />
         <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/task_item.xml" value="0.1" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/layout/update_fragment.xml" value="0.2" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/menu/delete_menu.xml" value="0.240625" />
+        <entry key="..\:/prog/ITI_Training/Examples/ToDo/app/src/main/res/menu/search_menu.xml" value="0.24166666666666667" />
       </map>
     </option>
   </component>

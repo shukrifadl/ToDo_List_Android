@@ -9,8 +9,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
-import com.example.android.todo.AddViewModel;
-import com.example.android.todo.MainActivity;
 import com.example.android.todo.databinding.AddFragmentBinding;
 import com.example.android.todo.viewmodels.TaskViewModel;
 import org.jetbrains.annotations.NotNull;

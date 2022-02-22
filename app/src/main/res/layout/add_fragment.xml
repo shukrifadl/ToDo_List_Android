@@ -21,7 +21,7 @@
                           android:orientation="vertical">
             
                 <EditText
-                        android:id="@+id/etNoteTitle"
+                        android:id="@+id/et_task_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@={viewModel.title}"
@@ -30,12 +30,13 @@
                         android:textStyle="bold"
                         android:textSize="@dimen/text_size"
                         android:ems="10"
-                        android:inputType="text"
+                        android:inputType="textShortMessage"
                         android:minHeight="48dp"
+                        android:layout_margin="@dimen/mid_margin"
                 />
      
                 <EditText
-                        android:id="@+id/etNoteBody"
+                        android:id="@+id/edt_task_body"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@={viewModel.body}"
@@ -47,6 +48,7 @@
                         android:layout_marginTop="@dimen/mid_margin"
                         android:ems="10"
                         android:inputType="textMultiLine"
+                        android:layout_margin="@dimen/mid_margin"
                 />
         
             </LinearLayout>

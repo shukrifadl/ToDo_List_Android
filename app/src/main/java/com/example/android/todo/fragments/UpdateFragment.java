@@ -9,23 +9,24 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
-import com.example.android.todo.databinding.AddUpdateFragmentBinding;
+import com.example.android.todo.databinding.UpdateFragmentBinding;
 import com.example.android.todo.viewmodels.TaskViewModel;
 import org.jetbrains.annotations.NotNull;
 
 public class UpdateFragment extends Fragment {
 
     private TaskViewModel mViewModel;
-    private AddUpdateFragmentBinding binding;
+    private UpdateFragmentBinding binding;
 
     public static UpdateFragment newInstance() {
         return new UpdateFragment();
     }
 
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = AddUpdateFragmentBinding.inflate(inflater, container, false);
+        binding = UpdateFragmentBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -34,12 +35,15 @@ public class UpdateFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(TaskViewModel.class);
         int taskId = UpdateFragmentArgs.fromBundle(getArguments()).getTaskId();
+        mViewModel.getTask(taskId).observe(this, task -> {
+            binding.etTaskTitle.setText(task.title);
+            binding.edtTaskBody.setText(task.body);
+        });
         binding.setViewModel(mViewModel);
+
         binding.fabSave.setOnClickListener(v -> {
             mViewModel.updateTask(taskId);
-            Navigation.findNavController(v).navigate(UpdateFragmentDirections.actionAddUpdateFragmentToHomeFragment());
+            Navigation.findNavController(v).navigate(UpdateFragmentDirections.actionUpdateFragmentToHomeFragment());
         });
     }
-
-
 }

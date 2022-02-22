@@ -3,11 +3,14 @@ package com.example.android.todo.viewmodels;
 import android.app.Application;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+import com.example.android.todo.MainActivity;
 import com.example.android.todo.R;
 import com.example.android.todo.db.Task;
+import com.example.android.todo.fragments.HomeFragment;
 import com.example.android.todo.repo.TasksRepo;
 import org.jetbrains.annotations.NotNull;
 
@@ -28,18 +31,22 @@ public class TaskViewModel extends AndroidViewModel {
     }
 
 
+public void deleteTask(Task task){
+        repo.delete(task);
+}
     public void updateTask(int taskId) {
         repo.updateTask(new Task(taskId, title.getValue(), body.getValue(), false));
     }
 
     public void addTask() {
         if (title.getValue() != null) {
-
             repo.insertTask(new Task(0, title.getValue(), body.getValue(), false));
-
         }
     }
 
+    public LiveData<List<Task>> search(String string) {
+        return repo.search(string);
+    }
     public LiveData<List<Task>> getAllTasks() {
         return allTasks;
     }
