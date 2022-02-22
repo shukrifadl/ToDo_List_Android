@@ -13,8 +13,11 @@
             tools:context=".MainActivity">
         <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
-                android:theme="@style/Widget.MaterialComponents.Toolbar"
                 android:background="@color/design_default_color_primary"
+         
+                android:minHeight="?attr/actionBarSize"
+                android:gravity="start|center"
+             android:theme="@style/CustomToolbarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
