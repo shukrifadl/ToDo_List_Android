@@ -47,7 +47,7 @@ public class UpdateFragment extends Fragment {
             if(binding.etTaskTitle.getText().length() >0) {
                 mViewModel.updateTask(taskId);
                 Navigation.findNavController(v).navigate(UpdateFragmentDirections.actionUpdateFragmentToHomeFragment());
-                Toast.makeText(getContext(), R.string.task_added,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.task_updated,Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(getContext(), R.string.cant_add_task,Toast.LENGTH_SHORT).show();
             }

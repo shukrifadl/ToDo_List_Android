@@ -3,15 +3,12 @@ package com.example.android.todo.viewmodels;
 import android.app.Application;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import com.example.android.todo.MainActivity;
 import com.example.android.todo.R;
 import com.example.android.todo.db.Task;
-import com.example.android.todo.fragments.HomeFragment;
-import com.example.android.todo.repo.TasksRepo;
+import com.example.android.todo.fragments.repo.TasksRepo;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

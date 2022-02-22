@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:elevation="@dimen/small_margin"
-                app:cardCornerRadius="@dimen/mis_radius"
+                app:cardCornerRadius="@dimen/min_radius"
                 android:layout_margin="@dimen/mid_margin"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -35,12 +35,9 @@
                     android:id="@+id/et_task_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:textSize="@dimen/text_size"
                     android:layout_margin="8dp"
-                    android:textAlignment="center"
+                    style="@style/title_text"
                     android:text="@={task.title}"
-                    android:textStyle="bold"
                     android:ems="10"
             />
             <TextView
@@ -50,17 +47,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/small_margin"
+                    style="@style/body_text"
             />
             <TextView
                     android:id="@+id/edt_task_body"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="@dimen/body_text_size"
                     android:layout_margin="@dimen/small_margin"
-                    android:background="@android:color/transparent"
+                    style="@style/body_text"
                     android:text="@={task.body}"
-                    android:gravity="start|top"
-                    android:textStyle="normal"
                     android:ems="10"
             />
         </LinearLayout>
@@ -75,7 +70,6 @@
                 android:layout_marginEnd="@dimen/mid_margin"
                 android:layout_marginBottom="@dimen/mid_margin"
                 app:srcCompat="@drawable/ic_delete"
-                android:backgroundTint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@+id/fab_edit"/>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -83,7 +77,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/add_task"
-                android:backgroundTint="@color/white"
                 app:srcCompat="@drawable/ic_edit"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginEnd="16dp"

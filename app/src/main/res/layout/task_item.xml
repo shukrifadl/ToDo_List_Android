@@ -3,7 +3,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
-        
         <import type="android.widget.CompoundButton"/>
         <variable name="task"
                   type="com.example.android.todo.db.Task"/>
@@ -17,10 +16,11 @@
             app:strokeWidth="1dp"
             app:strokeColor="@color/stroke_color"
             app:cardElevation="1dp"
-            app:cardCornerRadius="@dimen/mis_radius"
-            android:layout_margin="8dp">
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
-                                                           android:layout_height="wrap_content">
+            app:cardCornerRadius="@dimen/min_radius"
+            android:layout_margin="@dimen/small_margin">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             
             
             <CheckBox
@@ -28,6 +28,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/task_title"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    
                     android:id="@+id/complete_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -46,8 +47,9 @@
                       android:layout_width="0dp"
                       android:layout_height="wrap_content"
                       android:layout_gravity="center"
+                      android:textSize="@dimen/body_text_size"
                       android:text="@={task.title}"
-            />
+                      android:fontFamily="@font/cairo"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 </layout>

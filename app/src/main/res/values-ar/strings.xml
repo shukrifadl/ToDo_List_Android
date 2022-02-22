@@ -10,6 +10,7 @@
     <string name="delete_task">حذف المهمة</string>
     <string name="cant_add_task">عنوان المهمة ضروري</string>
     <string name="task_added">تم إضافة المهمة</string>
+    <string name="task_updated">تم تحديث المهمة</string>
     <string name="task_deleted">تم حذف المهمة</string>
     <string name="search">بحث</string>
     <string name="completed_task">مهمة مكتملة</string>

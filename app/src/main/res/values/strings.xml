@@ -9,6 +9,7 @@
     <string name="delete_task">Delete Task</string>
     <string name="cant_add_task">Task Title Can not be empty</string>
     <string name="task_added">Task added </string>
+    <string name="task_updated">Task updated </string>
     <string name="task_deleted">task Deleted</string>
     <string name="search">Search</string>
 <string name="completed_task">Completed Task</string>

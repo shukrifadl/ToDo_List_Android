@@ -19,23 +19,20 @@
             <LinearLayout android:layout_width="match_parent"
                           android:layout_height="match_parent"
                           android:orientation="vertical">
-            
+    
                 <EditText
                         android:id="@+id/et_task_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@={viewModel.title}"
-                       android:textAlignment="center"
-                        android:background="@android:color/transparent"
                         android:hint="@string/task_title"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/text_size"
+                        style="@style/title_text"
                         android:ems="10"
                         android:inputType="textShortMessage"
                         android:minHeight="48dp"
                         android:layout_margin="@dimen/mid_margin"
-                />
-     
+                  />
+    
                 <EditText
                         android:id="@+id/edt_task_body"
                         android:layout_width="match_parent"
@@ -43,15 +40,15 @@
                         android:text="@={viewModel.body}"
                         android:background="@android:color/transparent"
                         android:hint="@string/task_body_hint"
-                        android:gravity="start|top"
                         android:textStyle="normal"
                         android:textSize="@dimen/text_size"
                         android:layout_marginTop="@dimen/mid_margin"
                         android:ems="10"
                         android:inputType="textMultiLine"
+                        style="@style/body_text"
                         android:layout_margin="@dimen/mid_margin"
                 />
-        
+
             </LinearLayout>
          
         </com.google.android.material.card.MaterialCardView>
@@ -62,7 +59,6 @@
                 android:layout_margin="@dimen/mid_margin"
                 android:layout_gravity="bottom|end"
                 android:contentDescription="@string/add_task"
-                android:backgroundTint="@color/white"
                 app:srcCompat="@drawable/ic_done"
         />
     </FrameLayout>
