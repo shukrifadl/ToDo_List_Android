@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import com.example.android.todo.R;
 import com.example.android.todo.databinding.UpdateFragmentBinding;
 import com.example.android.todo.viewmodels.TaskViewModel;
 import org.jetbrains.annotations.NotNull;
@@ -42,8 +44,13 @@ public class UpdateFragment extends Fragment {
         binding.setViewModel(mViewModel);
 
         binding.fabSave.setOnClickListener(v -> {
-            mViewModel.updateTask(taskId);
-            Navigation.findNavController(v).navigate(UpdateFragmentDirections.actionUpdateFragmentToHomeFragment());
+            if(binding.etTaskTitle.getText().length() >0) {
+                mViewModel.updateTask(taskId);
+                Navigation.findNavController(v).navigate(UpdateFragmentDirections.actionUpdateFragmentToHomeFragment());
+                Toast.makeText(getContext(), R.string.task_added,Toast.LENGTH_SHORT).show();
+            }else {
+                Toast.makeText(getContext(), R.string.cant_add_task,Toast.LENGTH_SHORT).show();
+            }
         });
     }
 }

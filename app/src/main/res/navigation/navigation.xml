@@ -8,14 +8,18 @@
               android:name="com.example.android.todo.fragments.HomeFragment"
               android:label="home_fragment"
               tools:layout="@layout/home_fragment">
-        <action android:id="@+id/action_homeFragment_to_taskDetailsFragment" app:destination="@id/taskDetailsFragment"
+        <action android:id="@+id/action_homeFragment_to_taskDetailsFragment"
+                app:destination="@id/taskDetailsFragment"
                 app:popUpTo="@id/taskDetailsFragment"
                 app:popUpToInclusive="true"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"
         />
         <action android:id="@+id/action_homeFragment_to_addFragment" app:destination="@id/addFragment"
                 app:popUpTo="@id/addFragment"
                 app:popUpToInclusive="true"
-        />
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
     <fragment android:id="@+id/UpdateFragment"
               android:name="com.example.android.todo.fragments.UpdateFragment"
@@ -24,6 +28,8 @@
         <action android:id="@+id/action_UpdateFragment_to_homeFragment" app:destination="@id/homeFragment"
                 app:popUpTo="@id/homeFragment"
                 app:popUpToInclusive="true"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"
         />
     </fragment>
     <fragment android:id="@+id/taskDetailsFragment"
@@ -33,10 +39,14 @@
         <action android:id="@+id/action_taskDetailsFragment_to_UpdateFragment" app:destination="@id/UpdateFragment"
                 app:popUpTo="@id/UpdateFragment"
                 app:popUpToInclusive="true"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"
         />
         <action android:id="@+id/action_taskDetailsFragment_to_homeFragment" app:destination="@id/homeFragment"
                 app:popUpTo="@id/homeFragment"
                 app:popUpToInclusive="true"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"
         />
     </fragment>
     <fragment android:id="@+id/addFragment" android:name="com.example.android.todo.fragments.AddFragment"
@@ -45,6 +55,8 @@
         
                 app:popUpTo="@id/homeFragment"
                 app:popUpToInclusive="true"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim"
         />
     </fragment>
 </navigation>

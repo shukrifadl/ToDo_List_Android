@@ -6,4 +6,11 @@
     <string name="task_body_hint">"Enter Task Body "</string>
     <string name="task_title">Enter Task Title</string>
     <string name="splash_text">Developed By Shukri</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="cant_add_task">Task Title Can not be empty</string>
+    <string name="task_added">Task added </string>
+    <string name="task_deleted">task Deleted</string>
+    <string name="search">Search</string>
+<string name="completed_task">Completed Task</string>
+<string name="uncompleted_task">Task Not Completed Yet</string>
 </resources>

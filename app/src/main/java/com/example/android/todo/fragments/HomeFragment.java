@@ -72,7 +72,7 @@ public class HomeFragment extends Fragment implements androidx.appcompat.widget.
         MenuItem mSearch = menu.findItem(R.id.menu_search);
         SearchView mSearchView = (SearchView) mSearch.getActionView();
         mSearchView.setSubmitButtonEnabled(true);
-        mSearchView.setQueryHint("Search");
+        mSearchView.setQueryHint(getString(R.string.search));
         mSearchView.setOnQueryTextListener(this);
         super.onCreateOptionsMenu(menu, inflater);
     }

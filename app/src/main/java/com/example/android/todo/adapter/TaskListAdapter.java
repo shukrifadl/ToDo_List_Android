@@ -61,7 +61,6 @@ class ItemViewHolder extends RecyclerView.ViewHolder {
             Navigation.findNavController(view).navigate(
                     HomeFragmentDirections.actionHomeFragmentToTaskDetailsFragment(model.id));
         });
-        //Item.taskTitle.setText(model.title);
     }
 
     static ItemViewHolder create(ViewGroup parent) {

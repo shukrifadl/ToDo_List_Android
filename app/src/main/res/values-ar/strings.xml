@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">قائمة المهام</string>
+    <string name="add_task">إضافة مهمة</string>
+    <string name="task_marked_complete">تم إكمال المهة</string>
+    <string name="task_marked_active">المهمة قيد العمل</string>
+    <string name="task_body_hint">تفاصيل المهمة</string>
+    <string name="task_title">عنوان المهمة</string>
+    <string name="splash_text">Developed By Shukri</string>
+    <string name="delete_task">حذف المهمة</string>
+    <string name="cant_add_task">عنوان المهمة ضروري</string>
+    <string name="task_added">تم إضافة المهمة</string>
+    <string name="task_deleted">تم حذف المهمة</string>
+    <string name="search">بحث</string>
+    <string name="completed_task">مهمة مكتملة</string>
+    <string name="uncompleted_task">مهمة غير مكتملة</string>
+</resources>

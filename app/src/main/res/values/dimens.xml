@@ -3,9 +3,10 @@
     <dimen name="big_padding">24dp</dimen>
     <dimen name="match_constrain">0dp</dimen>
     <dimen name="mis_radius">8dp</dimen>
-    <dimen name="small_margin">8dp</dimen>
     <dimen name="mid_margin">16dp</dimen>
     <dimen name="text_size">24sp</dimen>
-    <dimen name="body_text_size">14sp</dimen>
+    <dimen name="body_text_size">18sp</dimen>
     <dimen name="mid_padding">16dp</dimen>
+    <dimen name="min_height">48dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
 </resources>
